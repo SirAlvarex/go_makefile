@@ -27,7 +27,7 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.int.yammer.com/docker/go_makefile/goMakefile"
+	"github.com/SirAlvarex/go_makefile/goMakefile"
 )
 
 // cobraCmd respresents the cobra command

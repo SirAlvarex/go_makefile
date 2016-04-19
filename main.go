@@ -2,7 +2,7 @@ package main
 
 import (
 "fmt"
-"github.int.yammer.com/docker/go_makefile/cmd"
+"github.com/SirAlvarex/go_makefile/cmd"
 "os"
 )
 

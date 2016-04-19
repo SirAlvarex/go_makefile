@@ -8,7 +8,7 @@ VERSION=$(shell git describe --always --long)
 BUILD_TIME=$(shell date +%FT%T%z)
 
 # Presumes we are using Viper/Cobra for CLI commands.  Place "version" and "buildDate" variable in your cmd/root.go file to enable populating of version flags
-LDFLAGS=-ldflags "-X github.int.yammer.com/docker/go_makefile/cmd.version=${VERSION} -X github.int.yammer.com/docker/go_makefile/cmd.buildDate=${BUILD_TIME}"
+LDFLAGS=-ldflags "-X github.com/SirAlvarex/go_makefile/cmd.version=${VERSION} -X github.com/SirAlvarex/go_makefile/cmd.buildDate=${BUILD_TIME}"
 
 .DEFAULT_GOAL: $(BINARY)
 
