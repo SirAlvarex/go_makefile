@@ -33,13 +33,7 @@ import (
 // cobraCmd respresents the cobra command
 var cobraCmd = &cobra.Command{
 	Use:   "cobra",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a Cli library for Go that empowers applications. This
-application is a tool to generate the needed files to quickly create a Cobra
-application.`,
+	Short: "Initialize the cobra extension and add a version command",
 	Run: func(cmd *cobra.Command, args []string) {
 		makefile.InitCobra(viper.GetString("binary"))
    },
