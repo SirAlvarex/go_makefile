@@ -28,7 +28,6 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
 )
 
 
@@ -46,12 +45,5 @@ func Execute() {
 		fmt.Println(err)
 		os.Exit(-1)
 	}
-}
-
-func init() {
-	RootCmd.Flags().BoolP("version", "v", false, "print the version")
-	viper.BindPFlag("version", RootCmd.Flags().Lookup("version"))
-	viper.SetDefault("version", false)
-
 }
 
